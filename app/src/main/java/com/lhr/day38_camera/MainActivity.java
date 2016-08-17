@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bt1= (Button) findViewById(R.id.bt1);
         iv1= (ImageView) findViewById(R.id.iv1);
+        /**
+         * 按钮的点击事件，打开照相机，并把拍摄的照片保存到sd卡中
+         */
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
