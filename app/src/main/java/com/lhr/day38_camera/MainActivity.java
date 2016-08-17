@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bt1= (Button) findViewById(R.id.bt1);
         iv1= (ImageView) findViewById(R.id.iv1);
-
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,20 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 File file=new File( Environment.getExternalStorageDirectory(),"aaa.jpg");
                 in.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
                 startActivityForResult(in,0);
-
+                //
             }
-//            public void onClick(View v) {
-//                Intent in=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//                File file=new File( Environment.getExternalStorageDirectory(),"aaa.jpg");
-//                in.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
-//                startActivityForResult(in,0);
-//            }
-//            public void onClick(View v) {
-//                Intent in=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//                File file=new File( Environment.getExternalStorageDirectory(),"aaa.jpg");
-//                in.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
-//                startActivityForResult(in,0);
-//            }
         });
     }
 
