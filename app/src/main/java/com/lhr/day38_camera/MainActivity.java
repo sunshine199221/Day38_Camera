@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 //
 
 
+
 //                Intent in=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 //                File file=new File( Environment.getExternalStorageDirectory(),"aaa.jpg");
 //                in.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
