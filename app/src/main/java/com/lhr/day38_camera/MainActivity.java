@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 File file=new File( Environment.getExternalStorageDirectory(),"aaa.jpg");
                 in.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
                 startActivityForResult(in,0);
+                //
             }
         });
     }
